@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Breaches Visualization</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .visualization {
+    text-align: center;
+  }
+  .cloud {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .cloud:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Data Breaches Visualization</h1>
+  <p><strong>What is the purpose of this visualization?</strong><br>
+    World’s Biggest Data Breaches and Hacks Data Visualization shows a variety of platforms and the data breaches they’ve suffered. A hover and hide effect expands each bubble, giving further details into these major hacks. It has Selected events over 30,000 records stolen, current as of Jan 2024. Breaches with interesting stories are also represented in the visualization.
+  </p>
+  <p><strong>What is the data?</strong><br>
+    Data set: <a href="https://docs.google.com/spreadsheets/d/1i0oIJJMRG-7t1GT-mr4smaTTU7988yXVz8nPlwaJ8Xk/edit?pli=1#gid=2">Data Breaches and Hacks</a>
+  </p>
+  <strong>Here are the attributes described: </strong><br>
+  <strong>Organization:</strong> The name of the organization or company that experienced the data breach.<br>
+  <strong>Alternative Name:</strong> Any alternative name or nickname associated with the organization.<br>
+  <strong>Records Lost: </strong>The number of records or pieces of information that were compromised during the breach.<br>
+  <strong>Year: </strong>The year in which the data breach occurred.<br>
+  <strong>Date: </strong>The specific date (month and day) when the data breach was reported or made public.<br>
+  <strong>Story: </strong> brief description or summary of what happened during the data breach.<br>
+  <strong>Sector:</strong> The industry sector to which the affected organization belongs (e.g., healthcare, government, tech).<br>
+  <strong>Method: </strong>The method or means by which the data breach occurred (e.g., hacked, poor security, lost device).<br>
+  <strong>Interesting Story:</strong> Any additional noteworthy information or details related to the data breach.<br>
+  <strong>Data Sensitivity: </strong>The sensitivity level of the compromised data, categorized from 1 to 5 (1 being the least sensitive, and 5 being the most sensitive).<br>
+  <strong>Displayed Records: </strong>The approximate number of records or pieces of information that were publicly disclosed or made available.<br>
+  <strong>Source Name:</strong> The name of the source or publication that reported the data breach.<br>
+  <strong>1st Source Link:</strong> The URL link to the first source providing information about the data breach.<br>
+  <strong>2nd Source Link:</strong> The URL link to the second source providing information about the data breach.<br>
+  <strong>ID:</strong> A unique identifier or reference number associated with each data breach entry.<br>
+
+  <p><strong>How was the data collected?</strong><br>
+    Sources: IdTheftCentre: <a href="https://www.idtheftcenter.org">https://www.idtheftcenter.org</a>, DataBreaches.net: <a href="https://www.databreaches.net">https://www.databreaches.net</a>, news reports
+  </p>
+  <p><strong>Who are the users that this visualization was made for?</strong><br>
+    Researchers, analysts, students, general public.
+  </p>
+  <p><strong>What questions do people want to ask about this data?</strong><br>
+    <strong>There are two types of visualizations:</strong><br>
+    - World’s biggest Data Breaches and Hacks over time<br>
+    - Data Breaches by Data Sensitivity<br>
+    Users can decide to ask questions regarding these and can also narrow down on the following sectors and methods of hacking in the filter.<br>
+    Users can also decide to look at data by interesting stories.
+  </p>
+  <p><strong>How can they find the answers with this tool?</strong><br>
+    Users can find the answers with this tool by hovering over the different clouds, and then clicking on the article that comes up.
+  </p>
+  <p><strong>Show some example insights someone can arrive at using this tool</strong><br>
+    Some insights that someone can arrive at after using this tool include:<br>
+    - There weren’t huge data leaks (< 1B) in the early years from 2000-2010, with the first major data leak being in 2013, by Yahoo.
+  </p>
+  <p><strong>What design choices are effective?</strong><br>
+    Effective design choices include:<br>
+    - Word cloud sorted by size depending on the size of the data leak, along with displaying information about how big the data leak was after hovering over it.<br>
+    - Arranging word clouds neatly at the end by severity of the data breached.
+  </p>
+  <p><strong>What are the limitations of this design- what can't someone do with this visualization?</strong><br>
+    Are there any design choices that are not effective, and how could they be improved?
+  </p>
+
+</div>
+</body>
+</html>

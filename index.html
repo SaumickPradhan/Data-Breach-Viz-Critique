@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -157,9 +157,185 @@ Reasons for the Data Breach: This can likely be done by visiting the article ass
 <br>
 The design choices for the word cloud are very effective, and the data is easy to read and understand. There are a few improvements, however, that could be implemented:<br>
 <br>
-A different color scheme, implemented in the word cloud separated by year, where the severity of the data breach color scale can be utilized.
+A different color scheme, implemented in the word cloud separated by year, where the severity of the data breach color scale can be utilized.<br>
+<br>
+
+For the plot along data sensitivity, the vertical access could have maybe the time component or the number of records, to give a better understanding of the data breach. <br>
 
   </p>
+
+
+</div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Breaches Visualization</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .visualization {
+    text-align: center;
+  }
+  .cloud {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .dataset-image {
+    max-width: 80%; /* Ensure the image doesn't exceed the container's width */
+    display: block; /* Ensure the image doesn't overflow its container */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  .cloud:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Data Breaches Visualization</h1>
+  <p><strong>Visualization Link:</strong><br>
+    <a href="https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/#bysensitivity">World's Biggest Data Breaches & Hacks</a>
+  </p>
+  <p><strong>Author:</strong><br>
+    Saumick Pradhan and Nachiket Dighe
+  </p>
+  <p><strong>What is the purpose of this visualization?</strong><br>
+    World’s Biggest Data Breaches and Hacks Data Visualization shows a variety of platforms and the data breaches they’ve suffered. A hover and hide effect expands each bubble, giving further details into these major hacks. It has Selected events over 30,000 records stolen, current as of Jan 2024. Breaches with interesting stories are also represented in the visualization.
+  </p>
+  <p><strong>What is the data?</strong><br>
+    Data set: <a href="https://docs.google.com/spreadsheets/d/1i0oIJJMRG-7t1GT-mr4smaTTU7988yXVz8nPlwaJ8Xk/edit?pli=1#gid=2">Data Breaches and Hacks</a>
+  </p>
+  <strong>Here are the attributes described: </strong><br>
+  <ul> <!-- Changed to bullet points -->
+    <li><strong>Organization:</strong> The name of the organization or company that experienced the data breach.</li>
+    <li><strong>Alternative Name:</strong> Any alternative name or nickname associated with the organization.</li>
+    <li><strong>Records Lost: </strong>The number of records or pieces of information that were compromised during the breach.</li>
+    <li><strong>Year: </strong>The year in which the data breach occurred.</li>
+    <li><strong>Date: </strong>The specific date (month and day) when the data breach was reported or made public.</li>
+    <li><strong>Story: </strong> brief description or summary of what happened during the data breach.</li>
+    <li><strong>Sector:</strong> The industry sector to which the affected organization belongs (e.g., healthcare, government, tech).</li>
+    <li><strong>Method: </strong>The method or means by which the data breach occurred (e.g., hacked, poor security, lost device).</li>
+    <li><strong>Interesting Story:</strong> Any additional noteworthy information or details related to the data breach.</li>
+    <li><strong>Data Sensitivity: </strong>The sensitivity level of the compromised data, categorized from 1 to 5 (1 being the least sensitive, and 5 being the most sensitive).</li>
+    <li><strong>Displayed Records: </strong>The approximate number of records or pieces of information that were publicly disclosed or made available.</li>
+    <li><strong>Source Name:</strong> The name of the source or publication that reported the data breach.</li>
+    <li><strong>1st Source Link:</strong> The URL link to the first source providing information about the data breach.</li>
+    <li><strong>2nd Source Link:</strong> The URL link to the second source providing information about the data breach.</li>
+    <li><strong>ID:</strong> A unique identifier or reference number associated with each data breach entry.</li>
+  </ul>
+
+  <img src="assets/IMG_7217.jpeg">
+
+  <p><strong>How was the data collected?</strong><br>
+    Sources: IdTheftCentre: <a href="https://www.idtheftcenter.org">https://www.idtheftcenter.org</a>, DataBreaches.net: <a href="https://www.databreaches.net">https://www.databreaches.net</a>, news reports
+  </p>
+  <p><strong>Who are the users that this visualization was made for?</strong><br>
+    Researchers, analysts, students, general public.
+  </p>
+  <p><strong>What questions do people want to ask about this data?</strong><br>
+    There are two types of visualizations:<br>
+    <ul> <!-- Changed to bullet points -->
+      <li>World’s biggest Data Breaches and Hacks over time</li>
+      <img src="assets/IMG_5923.png" height="400" width="500">
+      <li>Data Breaches by Data Sensitivity</li>
+      <img src="assets/IMG_1555.jpeg" height="400" width="500">
+      <br>
+    <li>Users can decide to ask questions regarding these and can also narrow down on the following sectors and methods of hacking in the filter.</li><br>
+    <img src="assets/IMG_5152.jpeg" height="400" ></li>
+    <br>
+    Users can also decide to look at data by interesting stories.
+    </ul>
+  </p>
+
+  <p><strong>How can they find the answers with this tool?</strong><br>
+    Users can find the answers with this tool by hovering over the different clouds, and then clicking on the article that comes up.
+    This is done by: 
+  </p>
+  <img src="assets/Screen Shot 2024-04-11 at 2.13.22 PM.png" height="400" width="550"> <br>
+  <p>And then hovering over the cloud with the answers to your question, for example, let us say I want to know what information about the Indonesian SIM cards were leaked, I will hover to the relevant cloud, which immediately expands with information:  </p>
+  <img src="assets/Screen Shot 2024-04-11 at 2.13.50 PM.png" height="400" width="550" > <br>
+  <p>Click the link to get to the article </p>
+  <img src="assets/Screen Shot 2024-04-11 at 2.14.19 PM.png" height="400" width="550" > <br>
+  <p>Number of people affected is also seen</p> <br>
+  <img src="assets/image copy 2.png" height="400" width="500"><br>
+  <p>Interesting stories are highlighted in yellow</p> <br>
+  <img src="assets/image copy 3.png" height="400" width="500"><br>
+
+  <p>Severity of the data breach is also highlighted in the color of the cloud</p> <br>
+  <img src="assets/IMG_1555.jpeg" height="400" width="500"><br>
+  <p>The data breach is sorted by year, and the size of the cloud is dependent on the size of the data breach</p> <br>
+  <p>Events can be searched by typing</p><br>
+  <img src="assets/image copy.png" height="400" width="500"><br>
+
+
+
+  <p><strong>Show some example insights someone can arrive at using this tool</strong><br>
+    Some insights that someone can arrive at after using this tool include:<br>
+    <ul> <!-- Changed to bullet points -->
+      <li>There weren’t huge data leaks (< 1B) in the early years from 2000-2010, with the first major data leak being in 2013, by Yahoo.</li>
+    </ul>
+  </p>
+  <img src="assets/Screen Shot 2024-04-11 at 3.49.49 PM.png"  height="400" width="550">
+  <p><strong>What design choices are effective?</strong><br>
+    Effective design choices include:<br>
+    <ul> <!-- Changed to bullet points -->
+      <li>Word cloud sorted by size depending on the size of the data leak, along with displaying information about how big the data leak was after hovering over it.</li>
+      <img src="assets/Screen Shot 2024-04-11 at 3.54.31 PM.png" height="400" width="550">
+      <li>Arranging word clouds neatly at the end by severity of the data breached.</li>
+      <li>Older bubbles have darker colors</li>
+      <img src="assets/image.png" height="400" width="550">
+    </ul>
+  </p>
+  
+  
+
+  <p><strong>What are the limitations of this design- what can't someone do with this visualization?</strong><br>
+    <br>
+    The design does not have a lot of limitation, but there are a few more things that can be implemented, such as:
+    <ul> <!-- Bullet points added -->
+        <li>The ability to filter data breach by country.</li>
+        <li>The ability to filter by effect, i.e find out how the data breach impacted people, and what data breach impacted people the most. This would most likely need to separate data collected by various forums on how the data breach affected their life.</li>
+        <li>The article can also be cited in the data to analyze the effects, such as “ “In 2018, [Kominfo] forced us to register for phone numbers using [government ID], promising us to be free of spam,” cybersecurity consultant Teguh Aprianto pointed out on Twitter. “[Not only] we are not free of spam, [but] registration data … are leaked and sold instead.” - taken from https://restofworld.org/2022/indonesia-hacked-sim-bjorka/, linked to Indonesian SIM cards.</li>
+        <li>Reasons for the Data Breach: This can likely be done by visiting the article associated with the word cloud and extracting the cause of their data breach—perhaps due to a neglected backdoor. Analyzing this information could assist in identifying potential reasons behind data breaches.</li>
+    </ul>
+    <br>
+    <strong>Are there any design choices that are not effective, and how could they be improved? </strong><br>
+    <br>
+    The design choices for the word cloud are very effective, and the data is easy to read and understand. There are a few improvements, however, that could be implemented:<br>
+    <br>
+    <ul> <!-- Bullet points added -->
+        <li>A different color scheme, implemented in the word cloud separated by year, where the severity of the data breach color scale can be utilized.</li>
+        <li>For the plot along data sensitivity, the vertical access could have maybe the time component or the number of records, to give a better understanding of the data breach.</li>
+    </ul>
+</p>
 
 
 </div>

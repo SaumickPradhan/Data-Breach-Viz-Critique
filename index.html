@@ -36,6 +36,11 @@
     background-color: #fff;
     cursor: pointer;
   }
+  .dataset-image {
+    max-width: 80%; /* Ensure the image doesn't exceed the container's width */
+    display: block; /* Ensure the image doesn't overflow its container */
+    margin: 0 auto; /* Center the image horizontally */
+  }
   .cloud:hover {
     background-color: #f0f0f0;
   }
@@ -103,8 +108,18 @@
   <img src="assets/Screen Shot 2024-04-11 at 2.13.22 PM.png" height="400" width="550"> <br>
   <p>And then hovering over the cloud with the answers to your question, for example, let us say I want to know what information about the Indonesian SIM cards were leaked, I will hover to the relevant cloud, which immediately expands with information:  </p>
   <img src="assets/Screen Shot 2024-04-11 at 2.13.50 PM.png" height="400" width="550" > <br>
-  <p>FInally, I can click the link to get to the article: </p>
+  <p>Click the link to get to the article: </p>
   <img src="assets/Screen Shot 2024-04-11 at 2.14.19 PM.png" height="400" width="550" > <br>
+  <p>Number of people affected is also seen</p> <br>
+  <p>INteresting stories are highlighted in yellow</p> <br>
+  <img src="assets/image copy 2.png" height="400" width="500"><br>
+
+  <p>Severity of the data breach is also highlighted in the color of the cloud</p> <br>
+  <img src="assets/IMG_1555.jpeg" height="400" width="500"><br>
+  <p>The data breach is sorted by year, and the size of the cloud is dependent on the size of the data breach</p> <br>
+  <p>Events can be searched by typing</p><br>
+  <img src="assets/image copy.png" height="400" width="500"><br>
+
 
 
   <p><strong>Show some example insights someone can arrive at using this tool</strong><br>
@@ -121,16 +136,29 @@
     <img src="assets/image.png" height="400" width="550"> <br>
 
   </p>
-  <p><strong>What are the limitations of this design- what can't someone do with this visualization?
-    Are there any design choices that are not effective, and how could they be improved?</strong><br>
-    </strong>
-    The ability to filter data breach by country 
+  
+  <p><strong>What are the limitations of this design- what can't someone do with this visualization?</strong><br>
 
-<br><br> The ability to filter by effect, i.e find out how the data breach impacted people, and what data breach impacted people the most. 
-<br>This would most likely need to separate data collected by various forums on how the data breach affected their life. 
-<br>The article can also be sited in the data to analyze the effects, such as “ “In 2018, [Kominfo] forced us to register for phone numbers using [government ID], promising us to be free of spam,” cybersecurity consultant Teguh Aprianto pointed out on Twitter. “[Not only] we are not free of spam, [but] registration data … are leaked and sold instead.” - taken from https://restofworld.org/2022/indonesia-hacked-sim-bjorka/, linked to indonesian sim cards. 
+ 
+    <br>
+The design does not have a lot of limitation, but there are a few more things that can be implemented, such as:<br>
+<br>
+The ability to filter data breach by country. <br>
+<br>
+The ability to filter by effect, i.e find out how the data breach impacted people, and what data breach impacted people the most. This would most likely need to separate data collected by various forums on how the data breach affected their life. <br>
+<br>
+The article can also be sited in the data to analyze the effects, such as “ “In 2018, [Kominfo] forced us to register for phone numbers using [government ID], promising us to be free of spam,” cybersecurity consultant Teguh Aprianto pointed out on Twitter. “[Not only] we are not free of spam, [but] registration data … are leaked and sold instead.” - taken from https://restofworld.org/2022/indonesia-hacked-sim-bjorka/, linked to indonesian sim cards. <br>
+<br>
+Reasons for the Data Breach: This can likely be done by visiting the article associated with the word cloud and extracting the cause of their data breach—perhaps due to a neglected backdoor. Analyzing this information could assist in identifying potential reasons behind data breaches. 
 
-<br><br>Reasons for the Data Breach: This can likely be done by visiting the article associated with the word cloud and extracting the cause of their data breach—perhaps due to a neglected backdoor. Analyzing this information could assist in identifying potential reasons behind data breaches. 
+<br><br>
+
+<strong>Are there any design choices that are not effective, and how could they be improved? </strong><br>
+<br>
+The design choices for the word cloud are very effective, and the data is easy to read and understand. There are a few improvements, however, that could be implemented:<br>
+<br>
+A different color scheme, implemented in the word cloud separated by year, where the severity of the data breach color scale can be utilized.
+
   </p>
 
 
